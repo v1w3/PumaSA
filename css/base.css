@@ -70,6 +70,48 @@ main {
 	width: 100%;
 }
 
+header {
+	z-index: 101;
+	position: absolute;
+}
+
+header img {
+	min-height: 8%;
+	min-width: 90px;
+	  
+	/* Set up proportionate scaling */
+	width: 5%;
+	height: auto;
+	  
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 47%;
+}
+
+.fab {
+	border: none;
+	background-color: #dd2200;
+	border-radius: 100%;
+	padding: 25px;
+	position: absolute;
+	left: 49%;
+	top: 65%;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 0 1px grey;
+	box-sizing: border-box;
+	width: 0;
+	height: 0;
+	cursor: pointer;
+ }
+ 
+ .fa {
+    transform: translate(-50%, -50%);
+  }
+
+
+
 .content {
 	position: relative;
 	display: flex;
@@ -288,15 +330,14 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 30%;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
 }
 cite {
 	color: white;
 	z-index: 11;
 	position: absolute;
-	text-align: right;
-	top: 40%;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	left: 46%;
+	top: 40%;;
 	font-size: 0.9em;
 }
 .word span {
