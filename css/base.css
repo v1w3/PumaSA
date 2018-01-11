@@ -91,26 +91,44 @@ header img {
 
 .fab {
 	border: none;
-	background-color: #dd2200;
+	background-color: #ce0404;
 	border-radius: 100%;
 	padding: 25px;
+	margin: 0;
 	position: absolute;
 	left: 49%;
 	top: 65%;
 	color: white;
 	cursor: pointer;
-	box-shadow: 0 0 1px grey;
+	box-shadow: 0 0 1px rgb(114, 0, 0);
 	box-sizing: border-box;
 	width: 0;
 	height: 0;
-	cursor: pointer;
  }
  
  .fa {
-    transform: translate(-50%, -50%);
+	 position: absolute;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
   }
 
+  #share-t {
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-right: 50px solid #ce0404;
+	border-bottom: 30px solid transparent;
+	z-index: 103;
+	position: absolute;
+	top: 85%;
+	right: 20%;
+  }
 
+  #share-t i{
+	  z-index: 104;
+	  position: absolute;
+	  padding: 0 10%;
+  }
 
 .content {
 	position: relative;
