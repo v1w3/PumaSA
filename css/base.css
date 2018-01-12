@@ -120,8 +120,8 @@ header img {
 	border-bottom: 30px solid transparent;
 	z-index: 103;
 	position: absolute;
-	top: 85%;
-	right: 20%;
+	top: 86%;
+	right: 15%;
   }
 
   #share-t i{
@@ -130,6 +130,39 @@ header img {
 	  padding: 0 10%;
   }
 
+  header {
+	  display: flex;
+	  width: 100vw;
+	  height: auto;
+  }
+
+  address {
+	  max-width: 20em;
+	  padding: 25px;
+  }
+
+  .addr-cpt {
+	  text-align: right;
+	  position: absolute;
+	  right: 1%;
+  }
+
+  .brands {
+	filter:invert(100%);
+
+	z-index: 100;
+	min-height: 8%;
+	min-width: 90px;
+	  
+	/* Set up proportionate scaling */
+	width: 15%;
+	height: auto;
+	  
+	/* Set up positioning */
+	position: fixed;
+	top: 85%;
+	left: 0%;
+  }
 .content {
 	position: relative;
 	display: flex;
