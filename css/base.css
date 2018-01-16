@@ -166,6 +166,17 @@ header img {
 	top: 85%;
 	left: 0%;
   }
+
+  .register {
+	position: relative;
+	margin: 0;
+	-webkit-writing-mode: vertical-lr;
+	writing-mode: vertical-lr;
+	padding: 1em;
+	text-align: right;
+	z-index: 10;
+	cursor: default;
+}
 .content {
 	position: relative;
 	display: flex;
@@ -334,6 +345,7 @@ cite {
 	top: 0;
 	left: 0;
 }
+
 
 @media only screen and (max-width: 1440px) {
 	body {

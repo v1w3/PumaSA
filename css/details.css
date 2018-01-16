@@ -138,6 +138,7 @@ a:focus {
 	height: 100vh;
 	/* min-height: 600px; */
 	pointer-events: none;
+	margin: 0 0 10em 0;
 }
 
 .content {
@@ -178,20 +179,31 @@ a:focus {
 }
 
 .content--related {
+	display: flex;
 	text-align: center;
 	align-content: center;
 	justify-content: center;
 	padding: 0 2em;
-	min-height: 600px;
 	height: 100vh;
-	font-size: 0.85em;
+	width: 100vw;
+	font-size: 1.15em;
 }
 
+.content--related a:hover {
+	color: black;
+	transform: scale(1.1);
+	transition: 0.25s ease-in-out;
+}
+.content--related img {
+	width: 50%;
+	opacity: 1;
+}
 .content__img {
 	grid-column: 1 / 3;
 	grid-row: 1 / 3;
-	width: 100%;
-	height: auto;
+	width: 80%;
+	max-height: auto;
+	
 }
 
 .content__title {
@@ -199,7 +211,7 @@ a:focus {
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: -0.025em;
 	font-size: 4em;
-	margin: 7em 0 0 0;
+	margin: 5em 0 0 0;
 	z-index: 10;
 	cursor: default;
 }
@@ -220,7 +232,7 @@ a:focus {
 	margin: 0;
 	z-index: 10;
 	padding: 0 1em;
-	margin: 2em;
+	margin: 5em 2em;
 	cursor: default;
 }
 
@@ -428,6 +440,48 @@ a:focus {
 
 .demo-3 .morph {
 	fill: #ce0404;
+}
+
+
+.tx-left {
+	text-align: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+h4 {
+	margin: 3em 0 0 10em;
+	width: 100%;
+	text-align: center;
+}
+
+nav {
+	z-index: 101;
+	position: fixed;
+	display: flex;
+	width: 100vw;
+	height: 10vh;
+}
+
+nav img {
+	min-height: 8%;
+	min-width: 90px;
+	  
+	/* Set up proportionate scaling */
+	width: 5%;
+	height: auto;
+	  
+	/* Set up positioning */
+
+	top: 0;
+	left: 47%;
+}
+
+
+address {
+	max-width: 20em;
+	padding: 25px;
 }
 
 @media screen and (max-width: 50em) {
