@@ -740,7 +740,7 @@ i {
 	.content__title {
 		text-align: left;
 		font-size: 4.5em;
-		position: relative;
+		position: absolute;
 		top: 40vh;
 		left: -15vw;
 	}
@@ -763,6 +763,7 @@ i {
 	.content__img {
 		margin: 3em 0 0 0;
 		width: 180vw;
+		height: auto;
 		right: 50%;
 	}
 	h4 {
@@ -779,11 +780,40 @@ i {
 		left: 10vh;
 	}
 	.content-wrap {
-		margin: 0 0 50vh 0;
+		margin: 0 0 100vh 0;
 	}
 	.content--related {
 		padding: 30vh 0;
 		display: block;
 		width: 80vw;
+	}
+	#share-t {
+		position: absolute;
+		top: 50%;
+	}
+}
+
+@media only screen and (max-height: 836px) and (max-width: 514px)  {
+	.content__desc {
+		top: 125vh;
+	}
+}
+
+@media only screen and (max-height: 766px) and (max-width: 475px)  {
+	h4 {
+		top: 150vh;
+		position: absolute;
+		padding: 180vh 0 0 0;
+	}
+	.navi {
+		display: block;
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
+@media only screen and (max-width: 766px) and (max-height: 475px)  {
+	h4 {
+		top: 125vh;
 	}
 }
