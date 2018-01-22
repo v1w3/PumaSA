@@ -63,6 +63,7 @@
 	content: 'Review & Submit';
 	font-weight: 700;
 	font-size: 1.85em;
+	padding: 1em;
 }
 
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
@@ -138,7 +139,6 @@ button.fs-continue,
 .fs-fields {
 	position: relative;
 	margin: 0 auto;
-	padding: 0;
 	top: 0;
 	list-style: none;
 }
@@ -177,8 +177,8 @@ button.fs-continue,
 }
 
 .fs-fields > li label.fs-field-label {
-	display: inline-block;
-	padding: 0 5px 1em 0;
+	display: inline;
+	padding: 0.8em 0;
 	font-weight: 700;
 	pointer-events: none;
 }
@@ -208,10 +208,10 @@ button.fs-continue,
     position: absolute;
     bottom: 100%;
    	left: 0;
-    padding: 0 0 10px;
+    /* padding: 0 0 10px; */
     min-width: 200px;
 	content: attr(data-info);
-	font-size: 0.4em;
+	font-size: 1.4em;
 	color: #fff;
     opacity: 0;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -239,7 +239,7 @@ button.fs-continue,
 .fs-fields input {
 	display: block;
 	margin: 0;
-	padding: 0 0 0.15em;
+	padding: 1em 0;
 	width: 100%;
 	border: none;
 	border-bottom: 2px solid #fff;
@@ -268,11 +268,11 @@ button.fs-continue,
 }
 
 .fs-fields input:focus {
-	background-color: #3b3f45; /* Fixes chrome bug with placeholder */
+	background-color: rgba(0,0,0,0.4); /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input:focus {
-	background-color: #fff; /* Fixes chrome bug with placeholder */
+	background-color: rgba(0,0,0,0.4); /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input {
@@ -282,8 +282,8 @@ button.fs-continue,
 .fs-fields .fs-radio-custom input[type="radio"] {
 	position: absolute;
 	display: block;
-	margin: 30px auto 20px;
-	margin: 0 auto 20px;
+	/* margin: 30px auto 20px;
+	margin: 0 auto 20px; */
 	width: 100%;
 	height: 100%;
 	opacity: 0;
@@ -291,12 +291,12 @@ button.fs-continue,
 }
 
 .fs-fields > li .fs-radio-custom span {
-	float: left;
+	/* float: left; */
 	position: relative;
 	margin-right: 3%;
-	padding: 10px;
-	max-width: 200px;
-	width: 30%;
+	padding: 1em;
+	width: 100%;
+	width: 100%;
 	text-align: center;
 	font-weight: 700;
 	font-size: 50%;
@@ -310,7 +310,7 @@ button.fs-continue,
 }
 
 .fs-form-overview .fs-fields > li .fs-radio-custom span {
-	max-width: 140px;
+	max-width: 100%;
 }
 
 .fs-form-overview .fs-fields > li .fs-radio-custom span {
@@ -319,7 +319,7 @@ button.fs-continue,
 
 .fs-fields > li .fs-radio-custom label {
 	display: block;
-	padding-top: 100%;
+	/* padding-top: 100%; */
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
@@ -395,7 +395,7 @@ button.fs-continue,
 }
 
 .fs-form-overview .fs-fields textarea:focus {
-	background: #fffed8;
+	background: none;
 }
 
 .fs-form div.cs-select.cs-skin-boxes {
@@ -506,7 +506,7 @@ button.fs-continue,
 
 .fs-nav-dots button:hover::before,
 .fs-nav-dots button.fs-dot-current::before {
-	background: #fffed8;
+	background: #fff;
 }
 
 /* Progress bar */
@@ -514,8 +514,8 @@ button.fs-continue,
 	position: absolute;
 	top: 0;
 	width: 0%;
-	height: 0.5em;
-	background: #fffed8;
+	height: 1em;
+	background: #ce0404;;
 	-webkit-transition: width 0.3s ease-in-out;
 	transition: width 0.3s ease-in-out;
 }
