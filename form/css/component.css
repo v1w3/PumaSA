@@ -674,14 +674,14 @@ button.fs-continue:hover {
 /* Error message */
 .fs-message-error {
 	position: absolute;
-	bottom: 95%;
+	bottom: 90%;
 	left: 50%;
 	z-index: 800;
 	max-width: 960px;
 	width: 70%;
 	color: #ce0404;
 	font-weight: 700;
-	font-size: 1em;
+	font-size: 1.3em;
 	opacity: 0;
 	-webkit-transform: translate3d(-50%,-5px,0);
 	transform: translate3d(-50%,-5px,0);

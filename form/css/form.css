@@ -25,7 +25,7 @@ body {
 	min-height: 590px;
 }
 
-img {
+.bg-img {
 	/* Set rules to fill background */
 	z-index: -10;
 	min-height: 100%;
@@ -58,10 +58,23 @@ li {
 
 .checkboxes input {
 	position: relative;
+	top: 2vh;
 	width: 80%;
-	height: auto;
-	margin: 2em;
-	padding: 3em;
+	height: 2vh;
+	margin: 2em 0 0 0;
+	padding: 3em 0 0 0;
+	transform: scale(2);
+	color: #c90808;
+}
+
+.checkboxes span {
+	margin: 3em 0 0 0;
+}
+
+.input-group {
+	margin: 2em 0;
+	padding: 3em 0;
+	display: block;
 }
 
 
